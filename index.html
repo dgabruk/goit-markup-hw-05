@@ -483,13 +483,13 @@
                 placeholder="E-mail"
               />
             </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
           </form>
-          <button class="subscribe-button" type="submit">
-            Subscribe
-            <svg class="subscribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-subscribe"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
@@ -507,11 +507,11 @@
             <div class="modal-field-wrap">
               <input
                 class="modal-input"
-                name="name"
+                name="user-name"
                 type="text"
                 id="user-name"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -521,11 +521,11 @@
             <div class="modal-field-wrap">
               <input
                 class="modal-input"
-                name="phone"
+                name="user-phone"
                 type="tel"
                 id="user-phone"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -535,37 +535,36 @@
             <div class="modal-field-wrap">
               <input
                 class="modal-input"
-                name="email"
+                name="user-email"
                 type="email"
                 id="user-email"
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-input-container">
-            <label class="modal-label" for="user-comment">
-              Comment
-              <textarea
-                class="modal-input modal-textarea"
-                name="comment"
-                rows="7"
-                placeholder="Text input"
-                id="user-comment"
-              ></textarea>
-            </label>
+          <div class="modal-check-container">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              rows="7"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
           </div>
           <div class="modal-check-container">
             <input
               class="modal-check visually-hidden"
               type="checkbox"
-              name="accept-privacy"
+              name="user-privacy"
               value="accept"
-              id="user-accept"
+              id="user-privacy"
+              value="true"
             />
-            <label class="modal-check-text" for="user-accept"
-              ><span
+            <label class="modal-check-text" for="user-privacy"
+              ><span class="modal-check-custom"
                 ><svg width="10" height="8">
                   <use
                     href="./images/icons.svg#icon-checkbox"
