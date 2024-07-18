@@ -474,6 +474,9 @@ img {
 .footer-subscribe {
     width: 100%;
     margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .subscribe-text {
