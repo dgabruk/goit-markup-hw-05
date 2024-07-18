@@ -734,10 +734,6 @@ img {
     margin-bottom: 24px;
 }
 
-.modal-check-custom {
-    display: inline-flex;
-}
-
 .modal-check-text {
     display: flex;
     justify-content: center;
@@ -749,7 +745,7 @@ img {
     color: #8e8f99;
 }
 
-.modal-check-text .modal-check-custom {
+.modal-check-text > .modal-check-custom {
     width: 16px;
     height: 16px;
     border-radius: 2px;
