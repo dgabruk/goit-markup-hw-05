@@ -625,6 +625,7 @@ img {
 .close-icon {
     display: block;
     margin: 0 auto;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text {
@@ -679,6 +680,10 @@ img {
     stroke: #4D5AE5;
 }
 
+.modal-comment-container {
+    margin-bottom: 16px;
+}
+
 .modal-input::placeholder {
     font-weight: 400;
     font-size: 12px;
@@ -730,7 +735,7 @@ img {
 }
 
 .modal-check-custom {
-    
+    display: inline-flex;
 }
 
 .modal-check-text {
@@ -763,7 +768,8 @@ img {
 .modal-check:checked + .modal-check-text .modal-check-custom {
     background-color: #404bbf;
     border: 1px solid #404bbf;
-    fill: #fff;
+    fill: #f4f4fd;
+    border: none;
 }
 
 .privacy-link {
